@@ -3,7 +3,7 @@
 <HEAD>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  
+  <title>Learn Scientific Computing</title>
   
 
   <script type="text/x-mathjax-config">
@@ -653,35 +653,45 @@ div.title {text-align: center;}
     <div class = "row">
       <div class = "col-md-12 twelve columns">
         <div class="title">
-          
+          <h1 class="title">Learn Scientific Computing</h1>
           
           
         </div>
 
-        <h1>Learn Scientific Computing</h1>
-<p>This is a repo for sharing ideas/codes/demo&#39;s related to Numerical Methods used in CFD, FEA, DL, ML and/or its HPC aspects, with a purpose of academic, professional or lesiure satisfaction. Be organized &#33;&#33;&#33;</p>
+        <p>This is a repo for sharing ideas/codes/demo&#39;s related to Numerical Methods used in CFD, FEA, DL, ML and/or its HPC aspects, with a purpose of academic, professional or lesiure satisfaction. Be organized &#33;&#33;&#33;</p>
+<h2>Whats new today?</h2>
+<p>Blogs on</p>
+<ul>
+<li><p><a href="https://github.com/SciCompResources/LearnSciComp/blob/master/Differentiation/Finding&#37;20derivative&#37;20numerically&#37;20Part&#37;201.html">Finding derivatives numerically - Part 1</a></p>
+</li>
+</ul>
+<p>The blog demonstrates and describes finite differences approach, issues with it and briefly introduces complex-step-differentiation. We hope to add next part in continuation of complex-step-differentiation as a motivation for automatic differentiation.</p>
+<ul>
+<li><p><a href="https://github.com/SciCompResources/LearnSciComp/blob/master/miscellaneous/spectral/fft_algo.html">Computing Discrete Fourier Transform</a></p>
+</li>
+</ul>
+<p>The blog demonstrates and describes naive and commonly popular ways of computing discrete fourier transform&#40;DFT&#41;, and it&#39;s benchmarking with the standard FFT based packages. This blog serves as a pre-requisite know-how of DFTs for future demo&#39;s on spectral  &#40;especially FFT based differentiation methods&#41;.</p>
 <h2>Guidelines for contributors</h2>
 <ul>
-<li><p>For those interested in contributing to the demonstrations, please contribute your ideas <a href="https://github.com/Numerical-Methods-and-HPC/LearnSciComp/discussions">here</a> in Julia/MATLAB like readable pseudocode syntax. For HPC related stuff, you can digress later into other languages if needed.</p>
+<li><p>For those interested in contributing to the demonstrations, please contribute your ideas <a href="https://github.com/SciCompResources/LearnSciComp/discussions">here</a> in Julia/MATLAB like readable pseudocode syntax. For HPC related stuff, you can digress later into other languages if needed.</p>
 </li>
 <li><p>Request to review your contributions from other contributors</p>
 </li>
 <li><p>Get familiar with github first or keep a github <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images">cheatsheet</a> ready with you. It should help you in effectively expressing yourself in <code>Issues</code> or <code>PRs</code> or <code>Discussions</code></p>
 </li>
-<li><p>Currently, to view some markdown files in some docs uploaded a <a href="https://chrome.google.com/webstore/detail/github-math-display/cgolaobglebjonjiblcjagnpmdmlgmda">chrome extension</a> is needed. Will try to remove this dependency soon.</p>
-</li>
 </ul>
 <h2>Trends in Numerical Methods used in CFD/ FEA/ ML and DL these days</h2>
 <p>Lets start with</p>
-<h3>1.&#41; Differentiation</h3>
-<p>A lot depends on how we approximate differential operators or calculate gradients in these numerical methods. To put it succinctly, there are challenges to approximate these differential operators properly, and its a useful skill for a computational science student. If one keeps up with major ways of approximating differential operators are by following way,</p>
+<h3>1&#41; Differentiation</h3>
+<p>A lot depends on how we approximate differential operators or calculate gradients in these numerical methods. To put it succinctly, there are challenges to approximate these differential operators properly, and it&#39;s a useful skill for a computational science student. If one keeps up with major ways of approximating differential operators are by following way:</p>
 <ul>
-<li><p><strong>Automatic differentiation</strong> &#40;a numerical approach used in automatic differentiation libraries like Tensorflow/PyTorch/Zygote. An ongoing discussion is <a href="https://github.com/Numerical-Methods-and-HPC/LearnSciComp/discussions/1">here</a>&#41;</p>
+<li><p><strong>Automatic differentiation</strong> &#40;a numerical approach used in automatic differentiation libraries like Tensorflow/PyTorch/Zygote. An ongoing discussion is <a href="https://github.com/SciCompResources/LearnSciComp/discussions/1">here</a>&#41;</p>
 </li>
-<li><p><strong>Traditional Numerical differentiation</strong> &#40;good old Taylor series, majorly used in CFD softwares&#41; We have been exposed to traditional numerical differentiation a lot times, but a bulk of us don&#39;t know how to create automatically stencils and Differential operators matrices and applying boundary conditions on them. &lt;/br&gt;</p>
+<li><p><strong>Traditional Numerical differentiation</strong> &#40;good old Taylor series, majorly used in CFD softwares&#41; We have been exposed to traditional numerical differentiation a lot times, but a bulk of us don&#39;t know how to create automatically stencils and Differential operators matrices and applying boundary conditions on them.</p>
 </li>
 </ul>
-<p>On going discussion of creating general <em>finite difference stencils</em>, <a href="https://github.com/Numerical-Methods-and-HPC/LearnSciComp/discussions/3">here</a>.&lt;/br&gt; On going discussion of creating general <em>spectral differentiation operators</em>, <a href="https://github.com/Numerical-Methods-and-HPC/LearnSciComp/discussions/5">here</a></p>
+<p>On going discussion of creating general <em>finite difference stencils</em>, <a href="https://github.com/SciCompResources/LearnSciComp/discussions/3">here</a>.</p>
+<p>On going discussion of creating general <em>spectral differentiation operators</em>, <a href="https://github.com/SciCompResources/LearnSciComp/discussions/5">here</a></p>
 <ul>
 <li><p><strong>Symbolic differentiation</strong> &#40;used in Maple/Mathematica/Sage like Libraries&#41;</p>
 </li>
@@ -689,13 +699,13 @@ div.title {text-align: center;}
 <p>In coming weeks, a small demonstration/blog of these would be added, along with useful references</p>
 <h4>References&#40;more to be added soon&#41;</h4>
 <ul>
-<li><p>The complex-step derivative approximation ,ACM Transactions on Mathematical Software September 2003 https://doi.org/10.1145/838250.838251   or https://hal.archives-ouvertes.fr/hal-01483287/document</p>
+<li><p><a href="https://doi.org/10.1145/838250.838251">The complex-step derivative approximation ,ACM Transactions on Mathematical Software September 2003</a></p>
 </li>
 <li><p>JuliaCon Talk <a href="https://www.youtube.com/watch?v&#61;Q9OLOqEhc64&amp;list&#61;PLP8iPy9hna6Qsq5_-zrg0NTwqDSDYtfQB&amp;index&#61;6">Keynote - Tricks and Tips in Numerical Computing | Nick Higham</a></p>
 </li>
-<li><p>Generation of finite difference formulas on arbitrarily spaced grid, Bengt Fornberg https://doi.org/10.1090/S0025-5718-1988-0935077-0</p>
+<li><p><a href="https://doi.org/10.1090/S0025-5718-1988-0935077-0">Generation of finite difference formulas on arbitrarily spaced grid, Bengt Fornberg</a></p>
 </li>
-<li><p>An algorithm for the finite difference approximation of derivatives with arbitrary degree and order of accuracy, by ,H.Z. Hassan ,A.A. Mohamad, G.E. Atteia, Journal of Computational and Applied Mathematics ,https://core.ac.uk/download/pdf/82556232.pdf</p>
+<li><p><a href="https://core.ac.uk/download/pdf/82556232.pdf">An algorithm for the finite difference approximation of derivatives with arbitrary degree and order of accuracy, by ,H.Z. Hassan ,A.A. Mohamad, G.E. Atteia, Journal of Computational and Applied Mathematics</a></p>
 </li>
 </ul>
 
